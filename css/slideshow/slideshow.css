@@ -1,0 +1,29 @@
+#slideshow {
+	height: 100vh;
+	visibility: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0%;
+	overflow: hidden;
+}
+
+.footer-element {
+	position: fixed;
+	bottom: 0;
+	margin-bottom: 1em;
+}
+
+#logo {
+	right: 1em;
+	margin-right: 1em;
+	height: 10%;
+	font-size: 32px;
+}
+
+@media (max-width: 784px) {
+	#logo {
+		right: 0;
+		top: 0;
+		height: 10%;
+	}
+}

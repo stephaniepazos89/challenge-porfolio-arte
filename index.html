@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- CSS Anims-->
+	<link rel="stylesheet" href="css/splashscreen/smokeEffectAnim.css">
+	<link rel="stylesheet" href="css/splashscreen/pacienciaTextAnim.css">
+	<link rel="stylesheet" href="css/splashscreen/textoCargaAnim.css">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/splashscreen/splashscreen.css">
+	<link rel="stylesheet" href="css/slideshow/slideshow.css">
+	<link rel="stylesheet" href="css/slideshow/statusBox.css">
+	<link rel="stylesheet" href="css/slideshow/arrows.css">
+	<link rel="stylesheet" href="css/slideshow/slides.css">
+
+	<link rel="preload" as="image" href="assets/images/background.png">
+
+	<title>Stephanie Pazos | Presentacion</title>
+</head>
+
+<body>
+	<div id="splashscreen">
+		<div id="splashscreen-content">
+
+			<div id="smoke-effect">
+				<spotlight></spotlight>
+				
+			</div>
+
+			<p>
+			<div id="texto-paciencia"></div>
+			<div id="texto-carga">estamos preparándolo todo...</div>
+			</p>
+		</div>
+	</div>
+
+	<main id="slideshow">
+
+		<nav>
+			<div class="arrow-wrapper" id="arrow-wrapper-next">
+				<img class="arrow" id="arrow-next" src="assets/icons/navigate-nextNew.svg" onclick="stepSlide(1)">
+			</div>
+
+			<div class="arrow-wrapper" id="arrow-wrapper-back">
+				<img class="arrow" id="arrow-back" src="assets/icons/navigate-backNew.svg" onclick="stepSlide(-1)">
+			</div>
+		</nav>
+
+		<section style="height: 100%;">
+			<!-- SLIDE 0 -->
+			<article class="slide">
+					<img class="foto-slide1" src="assets/images/yo.jpg">
+				<div class="tituloSlide">
+					<h1 class="title-text text-position-middle" >Stephanie Pazos</h1>
+					<p class="small-text text-position text-position-middle">
+						Soy estudiante de la Universidad Nacional de San Martín
+						<br />
+						actualmente cursando mis dos ultimas materias de la carrera.
+						<br />
+						Soy desarrolladora fullstack y vengo a mostrarles mi lado artistico,
+						<br />
+						espero les guste!!
+						<br />
+					</p>
+				</div>
+				
+			</article>
+			<!-- /SLIDE 0 -->
+
+			<!-- SLIDE 1 -->
+			<article class="slide">
+				<div class="tituloSlide">
+					<h1 class="title-text text-position-middle">
+						La belleza 
+						<br />
+						de lo antiguo
+					</h1>
+					<p class="small-text text-position text-position-left">
+						Es uno de mis primeros cuadros
+						<br />
+						y donde descubri mi amor por el arte.
+						<br />
+						<br />
+						La luz que se filtra suavemente destaca los 
+						<br /> 
+						detalles de la puerta y las texturas de las plantas,
+						<br /> 
+						invitando al espectador a detenerse y apreciar
+						<br />  
+						la belleza que se encuentra en lo cotidiano
+						<br /> 
+						 y lo antiguo.
+						<br />
+						<br />
+						Fue el primero en estar en una muestra
+
+					</p>
+				</div>
+					<img class="foto-slide2 js-foto" src="assets/images/LaBellezaDeLoAntiguo.jpg">
+			</article>
+			<!-- /SLIDE 1 -->
+
+			<!-- SLIDE 2 -->
+			<article class="slide">
+				<div class="tituloSlide">
+					<h1 class="title-text text-position-middle">
+						En lo profundo
+					</h1>
+					<p class="small-text text-position text-position-left">
+						La paleta de colores utilizada,
+						<br /> 
+						dominada por tonos azules y verdes, 
+						<br />
+						transmite la profundidad y el misterio del mar.
+						<br />
+						Los detalles en blanco, representando
+						<br />
+						la espuma de la ola al romper,
+						<br /> 
+						añaden un contraste vibrante que da vida
+						<br />
+						y movimiento a la escena.
+						<br />
+						La textura del óleo, cuidadosamente aplicada,
+						<br />
+						permite que la energía
+						<br />
+						de la ola y la solidez de las rocas
+						<br />
+						se sientan casi tangibles
+						<br /> 
+						para el espectador.
+					</p>
+				</div>
+				<img class="foto-slide2 js-foto" src="assets/images/EnLoProfundo.jpg">
+			</article>
+			<!-- /SLIDE 2 -->
+
+			<!-- SLIDE 3 -->
+			<article class="slide">
+				<div class="tituloSlide">
+					<h1 class="title-text text-position-middle">
+						Felicidad en la
+						<br />
+						pradera
+					</h1>
+					<p class="small-text text-position text-position-left">
+						La casa, de estilo acogedor y rústico,
+						<br />
+						se integra perfectamente con el entorno natural,
+						<br />
+						ofreciendo una sensación de paz y tranquilidad.
+						<br />
+						El lago añade una dimensión de calma y reflexión,
+						<br />
+						sus aguas inmóviles contrastando con la
+						<br />
+						abundancia de la vegetación circundante.
+						<br />
+						Esta obra invita al espectador a detenerse,
+						<br />
+						contemplar y disfrutar de la paz que ofrece
+						<br /> 
+						la naturaleza en su forma más pura.
+					</p>
+				</div>
+					<img class="foto-slide2 js-foto" src="assets/images/FelicidadEnElJardin.jpg">
+			</article>
+			<!-- /SLIDE 3 -->
+
+			<!-- SLIDE 4 -->
+			<article class="slide">
+				<h1 class="title-text last-slide-position">
+					CONTACTAME
+				</h1>
+
+				<div class="containerFinal">
+					<div class="social-media small-text last-slide-position">
+						<a class="icon-button" href="mailto:stephaniepazos89@gmail.com">
+							<img class="icon" src="assets/icons/mail.svg" alt="Mail icono">
+							Mail
+						</a>
+
+						<a class="icon-button" href="https://www.linkedin.com/in/stephanie-pazos-rubio/" target="_blank">
+							<img class="icon" src="assets/icons/linkedin.svg" alt="Linkedin icono">
+							Linkedin
+						</a>
+
+						<a class="icon-button" href="https://github.com/stephaniepazos89" target="_blank">
+							<img class="icon" src="assets/icons/github.svg" alt="GitHub icono">
+							GitHub
+						</a>
+					</div>
+
+					<p class="small-text text-position-middle last-slide-position">
+						Te interesa mi perfil? <br />
+						Visita mi <a class="text-hyperlink" href="https://www.linkedin.com/in/stephanie-pazos-rubio/"
+							target="_blank">linkedin</a>.
+					</p>
+				</div>
+			</article>
+			<!-- /SLIDE 4 -->
+
+		</section>
+
+		<footer>
+			<div class="footer-element" id="status">
+				<table id="status-box">
+					<tr>
+						<td class="status-cell" onclick="irASlideSeleccionado(this)">
+							<div id="status-cell-active">&#8203;</div>
+						</td>
+						<td class="status-cell" onclick="irASlideSeleccionado(this)">
+							<div>1</div>
+						</td>
+						<td class="status-cell" onclick="irASlideSeleccionado(this)">
+							<div>2</div>
+						</td>
+						<td class="status-cell" onclick="irASlideSeleccionado(this)">
+							<div>3</div>
+						</td>
+						<td class="status-cell" onclick="irASlideSeleccionado(this)">
+							<div>&#8203;</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<p class="footer-element" id="logo">SPAZOS</p>
+		</footer>
+	</main>
+
+	<!-- Modulos de JS -->
+	<script src="js/utils.js"></script>
+
+	<script src="js/anims/slideshow/slideshowAnim.js"></script>
+	<script src="js/anims/slideshow/statusBoxAnim.js"></script>
+
+	<script src="js/anims/fadeInAndOutAnim.js"></script>
+	<script src="js/anims/parallaxImagenes.js"></script>
+	<!-- Modulos de JS -->
+
+	<!-- JS -->
+	<script src="js/slideshow.js"></script>
+
+	<!-- Main -->
+	<script src="js/splashscreen.js"></script>
+	<!-- Main -->
+	<!-- JS -->
+</body>
+
+</html>

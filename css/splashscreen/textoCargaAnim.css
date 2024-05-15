@@ -1,0 +1,19 @@
+#texto-carga {
+  color: white;
+  font-size: large;
+  font-style: italic;
+  transform: scaleX(0) translate(3em, -1.25em);
+  animation: animacion-texto 0.08s 2.9s forwards;
+}
+
+@keyframes animacion-texto{
+  from{
+    opacity: 0;
+    transform: scaleX(0) translate(2em, -1.25em);
+  }
+
+  to{
+    opacity: 1;
+    transform: scaleX(1) translate(3em, -1.25em);
+  }
+}

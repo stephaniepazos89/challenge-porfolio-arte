@@ -1,0 +1,39 @@
+.arrow-wrapper{
+  position: fixed;
+  top: 40%;
+  cursor: pointer;
+  z-index: 2;
+  transition: .1s;
+}
+
+.arrow-wrapper:hover{
+  opacity: 0.5;
+  margin: 0 calc(-0.2em - 0.2vw);
+}
+
+.arrow{
+  height: 5em;
+}
+
+@media (max-width: 784px){
+  .arrow{
+    height: 3em;
+  }
+}
+
+#arrow-wrapper-next{
+  right: 0;
+}
+
+#arrow-wrapper-prev{
+  right: 0;
+}
+
+#arrow-next{
+  right: 0;
+}
+
+#arrow-prev{
+  left: 0;
+  opacity: 0;
+}

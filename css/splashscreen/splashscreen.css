@@ -1,0 +1,11 @@
+#splashscreen-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#splashscreen {
+  height: 100vh;
+}

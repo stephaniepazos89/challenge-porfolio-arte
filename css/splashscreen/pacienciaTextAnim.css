@@ -1,0 +1,56 @@
+#texto-paciencia::before {
+  content: "Paciencia!";
+  color: transparent;
+  animation: paciencia 2s 1s forwards;
+  transform: scale(0) translateX(0);
+}
+
+#texto-paciencia {
+  font-size: large;
+  font-style: italic;
+  transform: scale(1);
+  animation: paciencia 1s 1s forwards;
+}
+
+@keyframes paciencia {
+  0% {
+    color: white;
+    content: "Paciencia!";
+    transform: translateX(0) scale(0);
+    font-size: 0;
+  }
+  15% {
+    font-size: large;
+    transform: scale(1.2);
+    background-color: transparent;
+  }
+  30% {
+    transform: scale(0.95);
+  }
+  45% {
+    transform: scale(1.05);
+  }
+  60% {
+    transform: scale(0.995);
+  }
+  75% {
+    transform: scale(1) translateX(0);
+  }
+  85% {
+    transform: translateX(-3.8em);
+    content: "Paciencia";
+  }
+
+  90% {
+    content: "Paciencia";
+  }
+
+  91% {
+    content: "Paciencia,";
+  }
+  100% {
+    content: "Paciencia,";
+    transform: translateX(-3.8em);
+    color: white;
+  }
+}
